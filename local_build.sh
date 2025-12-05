@@ -1,6 +1,5 @@
 #!/bin/bash
 
-#
 # Local installation of the Drogon framework (https://github.com/drogonframework/drogon) for development.
 # It is assumed that Drogon dependencies are already installed (packages are distribution specific).
 #
@@ -9,11 +8,11 @@
 #
 
 mkdir build
-cd build
+cd build || exit
 wget https://github.com/drogonframework/drogon/archive/refs/tags/v$1.tar.gz
 tar -xzvf v$1.tar.gz
 rm -rf v$1.tar.gz
-cd drogon-$1
+cd drogon-$1 || exit
 wget https://github.com/an-tao/trantor/archive/refs/tags/v$2.tar.gz
 tar -xzvf v$2.tar.gz
 rm -rf v$2.tar.gz
