@@ -1,8 +1,8 @@
-ARG alpine_version=3.23.0
+ARG alpine_version=3.24.1
 FROM alpine:${alpine_version}
 WORKDIR /build
-ARG drogon_version=1.9.11
-ARG trantor_version=1.5.24
+ARG drogon_version=1.9.13
+ARG trantor_version=1.5.28
 COPY Logger_cc.patch ./Logger_cc.patch
 COPY Logger_h.patch ./Logger_h.patch
 RUN apk add --no-cache cmake build-base git nlohmann-json jsoncpp-dev \

@@ -4,7 +4,7 @@
 # It is assumed that Drogon dependencies are already installed (packages are distribution specific).
 #
 # Usage: sudo ./local_build.sh drogon_version trantor_version
-# Example: sudo ./local_build.sh 1.9.11 1.5.24
+# Example: sudo ./local_build.sh 1.9.13 1.5.28
 #
 
 mkdir build
