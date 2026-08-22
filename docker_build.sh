@@ -3,7 +3,7 @@
 # Build base image for building applications based on the Drogon framework.
 #
 # Usage: ./docker_build.sh alpine_version drogon_version trantor_version revision
-# Example: ./docker_build.sh 3.24.1 1.9.13 1.5.28 1
+# Example: ./docker_build.sh 3.24.1 1.9.13 1.5.28 2
 #
 
 docker login && docker build --build-arg alpine_version=$1 --build-arg drogon_version=$2 \
